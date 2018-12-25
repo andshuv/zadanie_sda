@@ -14,7 +14,7 @@ int main(int argc, char *argv[]){
 		fin >> st;
 		switch(st[0]){
 		case '+' : push(pop() + pop()); break;
-		case '-' : i = -pop(); push(i + pop()); break;
+		case '-' : i = pop(); push(i - pop()); break;
 		case '*' : push(pop() * pop()); break;
 		default : push(atoi(st.c_str())); break;
 		}
